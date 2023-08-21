@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+        <style>
+            body{
+                margin-left: 20em;
+                margin-right: 20em;
+                margin-top: 2em;
+            }
+            table{
+               margin-top: 1em;
+            }
+            .titulo{
+                font-size: large;
+                }
+        </style>
+        <title>Empréstimo com Juros Simples</title>
+    </head>
+    <body>
+
+        <form class="pure-form pure-form-stacked">
+            <fieldset>
+                <legend class="titulo">Empréstimo com Juros Simples</legend>
+                <label for="inContratante">Nome do Contratante</label>
+                <input type="text" id="inContratante">
+                <label for="inValor">Valor do Empréstimo</label>
+                <input type="number" id="inValor" step="0.1">
+                <label for="inParcela">Numero de parcelas</label>
+                <input type="number" id="inParcela" step="1">
+                <label for="inJuros">Taxa de Juros %</label>
+                <input type="number" id="inJuros" step="0.1">
+                <input type="button" value="Calcular" id="btnCalcular" class="pure-button pure-button-primary">
+            </fieldset>
+            
+        </form>
+
+        <table class="pure-table pure-table-bordered">
+            <thead>
+                <tr>
+                    <th>Contratante</th>
+                    <th>Valor do Empréstimo</th>
+                    <th>Valor da Parcela</th>
+                    <th>Juros Total</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        
+        <script src="imposto.js"></script>
+    </body>
+</html>
